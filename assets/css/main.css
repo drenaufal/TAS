@@ -65,6 +65,22 @@ body {
   font-family: var(--default-font);
 }
 
+.dropdown-menu{
+  min-width: 15rem;
+  z-index: 100;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+}
+
+.form-select{
+margin: 8px 10px 8px 8px;
+width: 92%;
+}
+
+.btn-primary{
+  min-width: 90%;
+  margin-left: 10px;
+}
+
 a {
   color: var(--accent-color);
   text-decoration: none;
@@ -231,6 +247,10 @@ h6 {
   z-index: 997;
 }
 
+.form-floating>label{
+  left: 5px;
+}
+
 .header .logo {
   line-height: 1;
 }
@@ -247,12 +267,25 @@ h6 {
   color: var(--heading-color);
 }
 
+.navmenu a:hover:before,
+.navmenu li:hover>a:before,
+.navmenu .active:before {
+  visibility: visible;
+  width: 100%;
+}
+
+.navmenu li:hover>a,
+.navmenu .active,
+.navmenu .active:focus {
+  color: color-mix(in srgb, var(--nav-color) 90%, white 15%);
+}
+
 .header .cta-btn,
 .header .cta-btn:focus {
   color: var(--contrast-color);
   font-size: 13px;
-  padding: 7px 25px;
-  margin: 0 0 0 30px;
+  padding: 6px 15px;
+  margin: 0 15px 0 10px;
   border-radius: 4px;
   transition: 0.3s;
   text-transform: uppercase;
@@ -264,6 +297,14 @@ h6 {
   color: var(--contrast-color);
   background: var(--accent-color);
   border-color: var(--accent-color);
+}
+
+.header .cta-btn.active {
+  color: var(--contrast-color);
+  background: var(--accent-color);
+  border-color: var(--accent-color);
+  border: 2px solid var(--contrast-color);
+  
 }
 
 @media (max-width: 1200px) {
@@ -2592,6 +2633,7 @@ section,
   height: 100%;
   transition: 0.5s;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
 }
 .produk .produk-item:hover {
   box-shadow: 0 0 55px rgba(0, 0, 0, 0.4);
@@ -2756,45 +2798,114 @@ section,
   /* Add your styles here */
 }
 
-.horizontal-timeline .items {
-  border-top: 3px solid #e9ecef;
+.jumbotron {border-radius: 0;margin-bottom: 0;}
+
+.jumbotron.df-bg-primary {
+  background-color: #083386;
 }
 
-.horizontal-timeline .items .items-list {
-  display: block;
-  position: relative;
+.df-switch {
+  margin-top: 20px;
+  padding: 2rem;
   text-align: center;
-  padding-top: 70px;
-  margin-right: 0;
 }
-
-.horizontal-timeline .items .items-list:before {
+.btn-toggle {
+  top: 50%;
+  transform: translateY(-50%);
+}
+.btn-toggle {
+  margin: 0 4rem;
+  padding: 0;
+  position: relative;
+  border: none;
+  height: 1.5rem;
+  width: 5rem;
+  border-radius: 1.5rem;
+  color: #6b7381;
+  background: #0885da;
+}
+.btn-toggle:focus,
+.btn-toggle.focus,
+.btn-toggle:focus.active,
+.btn-toggle.focus.active {
+  outline: none;
+}
+.btn-toggle:before,
+.btn-toggle:after {
+  line-height: 1.5rem;
+  width: 4rem;
+  text-align: center;
+  font-weight: 600;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: absolute;
+  bottom: 0;
+  transition: opacity 0.25s;
+}
+.btn-toggle:before {
+  content: 'ENGLISH';
+  left: -5rem;
+  color: #109fff;
+}
+.btn-toggle:after {
+  content: 'SPANISH';
+  right: -5rem;
+  opacity: 0.5;
+  color: #F47280;
+}
+.btn-toggle > .inner-handle {
+  border-radius: 13px;
+  width: 65px;
+  height: 13px;
+  position: absolute;
+  top: 6px;
+  left: 8px;
+  background-color: #0f71bd;
+  box-shadow: inset 1px 1px 2px -1px black;
+}
+.btn-toggle.active > .inner-handle {
+  background-color: #BD4053;
+}
+.btn-toggle > .handle:before {
   content: "";
   position: absolute;
-  height: 36px;
-  border-right: 2px dashed #dee2e6;
-  top: 0;
+  height: 34px;
+  width: 34px;
+  top: 35%;
+  left: 11px;
+  background-image: radial-gradient(circle at center, #0785da 5px, transparent 5px);
+  background-size: 10px 10px;
+  background-repeat: no-repeat;
 }
-
-.horizontal-timeline .items .items-list .event-date {
+.btn-toggle.active > .handle:before {
+  background-image: radial-gradient(circle at center, #F47280 5px, transparent 5px);
+}
+.btn-toggle > .handle {
   position: absolute;
-  top: 36px;
-  left: 0;
-  right: 0;
-  width: 75px;
-  margin: 0 auto;
-  font-size: 0.9rem;
-  padding-top: 8px;
+  top: -0.2875rem;
+  left: 0.3875rem;
+  width: 2.125rem;
+  height: 2.125rem;
+  border-radius: 1.125rem;
+  background: #fff;
+  transition: left 0.25s;
+  border: 1px solid #ccc;
 }
-
-@media (min-width: 1140px) {
-  .horizontal-timeline .items .items-list {
-    display: inline-block;
-    width: 24%;
-    padding-top: 45px;
-  }
-
-  .horizontal-timeline .items .items-list .event-date {
-    top: -40px;
-  }
+.btn-toggle.active {
+  transition: background-color 0.25s;
+}
+.btn-toggle.active > .handle {
+  left: 2.4175rem;
+  transition: left 0.25s;
+}
+.btn-toggle.active:before {
+  opacity: 0.5;
+}
+.btn-toggle.active:after {
+  opacity: 1;
+  color: #F47280;
+}
+.btn-toggle.active {
+  background-color: #F47280;
 }

@@ -43,45 +43,43 @@
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center">
 
-      <a href="index.html" class="logo d-flex align-items-center me-auto">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1 class="sitename">PT</h1>
-      </a>
+        <a href="index.html" class="logo d-flex align-items-center me-auto">
+          <!-- Uncomment the line below if you also wish to use an image logo -->
+          <!-- <img src="assets/img/logo.png" alt=""> -->
+          <h1 class="sitename">PT</h1>
+        </a>
 
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-         
-          <li class="dropdown"><span>Company</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="about.html">About us</a></li>
-              <li><a href="career.html">Career</a></li>
-
-            </ul>
-          </li>
-          <li class="dropdown"><a href="#" class="active"><span>Product & Service</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="product.html">Product</a></li>
-              <li><a href="portfolio.html">Portfolio</a></li>
-
-            </ul>
-          </li>
-          <li class="dropdown"><span>Media</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="news.html">News</a></li>
-              <li><a href="gallery.html">Gallery</a></li>
-
-            </ul>
-          </li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-      </nav>
-
-      
-
-    </div>
+  
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a href="index.html" >Home</a></li>
+            <li class="dropdown"><a href="#"><span>Company</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <ul>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="career.html">Career</a></li>
+              </ul>
+            </li>
+            <li class="dropdown"><a href="#" class="active"><span>Product & Service</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                    <li><a href="product.html">Product</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                </ul>
+            </li>
+            <li class="dropdown"><a href="#"><span>Media</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                </ul>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+  
+        <a  href="#" class="cta-btn active">ind</a>
+        <a class="cta-btn" href="#">eng</a>
+  
+      </div>
   </header>
 
   <main class="main">
@@ -121,21 +119,86 @@
                         </div>
                         <div class="col-5"></div>
                         <div class="col-xl-1">
-                            <div class="bg-light ps-3 py-3 rounded d-flex justify-content-between mb-4">
+                            <!-- <div class="bg-light ps-3 py-3 rounded d-flex justify-content-between mb-4">
                                 
                                 <select id="products" name="fruitlist" class="border-0 form-select-sm bg-light me-3" form="fruitform">
                                     <option value="">1</option>
                                     <option value="list">2</option>
                                
                                 </select>
-                            </div>
+                            </div> -->
+                            <div class="dropdown">
+                                <button class="btn btn-secondary ps-3 py-3 rounded d-flex justify-content-between mb-4  " type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="bi bi-funnel"></i>
+                                </button>
+                                <ul class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton1">
+                                  <li>
+                                    <div class="form-floating">
+                                        <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                                          <option selected>Open this select menu</option>
+                                          <option value="1">One</option>
+                                          <option value="2">Two</option>
+                                          <option value="3">Three</option>
+                                        </select>
+                                        <label for="floatingSelect">Works with selects</label>
+                                      </div>
+                                </li>
+                                <li>  
+                                    <div class="form-floating">
+                                        <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                                          <option selected>Open this select menu</option>
+                                          <option value="1">One</option>
+                                          <option value="2">Two</option>
+                                          <option value="3">Three</option>
+                                        </select>
+                                        <label for="floatingSelect">Works with selects</label>
+                                      </div>
+                                </li>
+                                <li>  
+                                    <div class="form-floating">
+                                        <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                                          <option selected>Open this select menu</option>
+                                          <option value="1">One</option>
+                                          <option value="2">Two</option>
+                                          <option value="3">Three</option>
+                                        </select>
+                                        <label for="floatingSelect">Works with selects</label>
+                                      </div>
+                                </li>
+                                <li>  
+                                    <div class="form-floating">
+                                        <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                                          <option selected>Open this select menu</option>
+                                          <option value="1">One</option>
+                                          <option value="2">Two</option>
+                                          <option value="3">Three</option>
+                                        </select>
+                                        <label for="floatingSelect">Works with selects</label>
+                                      </div>
+                                </li>
+                                <li>  
+                                    <div class="form-floating">
+                                        <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                                          <option selected>Open this select menu</option>
+                                          <option value="1">One</option>
+                                          <option value="2">Two</option>
+                                          <option value="3">Three</option>
+                                        </select>
+                                        <label for="floatingSelect">Works with selects</label>
+                                      </div>
+                                </li>
+                                <li>
+                                    <button type="button" class="btn btn-primary">Primary</button>
+                                </li>
+                                </ul>
+                              </div>
                         </div>
                     </div>
                     <div class="row g-4">
                         <div class="col-lg-12">
                             <div class="row g-4 justify-content-center">
                                 <div class="col-md-6 col-lg-6 col-xl-3">
-                                    <div class="rounded position-relative produk-item">
+                                    <div class="rounded position-relative produk-item" style="cursor: pointer;">
                                         <div class="produk-img">
                                             <img src="assets/img/product/best-product-5.png" class="img-fluid w-100 rounded-top" alt="" data-toggle="modal" data-target="#exampleModalCenter">
                                         </div>
@@ -306,7 +369,7 @@
 
   
     <!-- Modal -->
-    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <!-- <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
         <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
           <div class="modal-content rounded-0">
             <div class="modal-body py-0">
@@ -320,13 +383,66 @@
                       <a href="#" class="share"><span class="icon-share"></span></a>
                       <h3 class="mb-3 line">nama barang</h3>
   
-                      <p class="mb-5" style="font-size: 20px;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                      <p class="mb-5" style="font-size: 18px;">#Keunggulan
+                        Mudah dan aman digunakan dan didisinfeksi untuk berbagai
+                       ruang di area perumahan
+                        Efektivitas tinggi untuk membunuh virus, bakteri untuk
+                       membersihkan lingkungan
+                        Timer tersedia: timer 15/30/60 menit untuk aplikasi yang berbeda
+                        Operasikan langkah demi langkah dengan mudah melalui interaksi
+                       suara - Alarm suara untuk menunjukkan status kerja
+                       
+                       #Spesifikasi Produk
+                        Daya 24W
+                        Sensor microwave mendeteksi objek bergerak dalam radius 3 meter
+                        Kabel 3 meter, nyaman untuk dipindahkan
+                        Lampu UVC PLL Philips 18W
+                        10 thn masa penggunaan (berdasarkan penggunaan 2,5 jam per hari)</p>
   
                   
                   </div>
                 </div>
               </div>
   
+            </div>
+          </div>
+        </div>
+      </div> -->
+
+      <!-- end modal -->
+
+      <div class="modal fade" tabindex="-1" role="dialog" id="exampleModalCenter">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-body p-0 m-0">
+              <div class="row g-0 align-items-center">
+                <div class="col-sm-6 col-xs-12">
+                  <img src="assets/img/product/best-product-5.png" alt="Gift Poster" class="img-fluid" id="leftImg">
+                </div>
+                <div class="col-sm-6 col-xs-12 text-center">
+                  <div class="px-4">
+                    <h2>judul</h2>
+                    <p class="my-3 text-secondary">#Keunggulan
+                        Mudah dan aman digunakan dan didisinfeksi untuk berbagai
+                       ruang di area perumahan
+                        Efektivitas tinggi untuk membunuh virus, bakteri untuk
+                       membersihkan lingkungan
+                        Timer tersedia: timer 15/30/60 menit untuk aplikasi yang berbeda
+                        Operasikan langkah demi langkah dengan mudah melalui interaksi
+                       suara - Alarm suara untuk menunjukkan status kerja
+                       
+                       #Spesifikasi Produk
+                        Daya 24W
+                        Sensor microwave mendeteksi objek bergerak dalam radius 3 meter
+                        Kabel 3 meter, nyaman untuk dipindahkan
+                        Lampu UVC PLL Philips 18W
+                        10 thn masa penggunaan (berdasarkan penggunaan 2,5 jam per hari)</p>
+  </p>
+                    
+                  </div>
+                  <!-- <a type="button" class="text-secondary mt-3" data-bs-dismiss="modal"><small></small></a> -->
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -375,7 +491,7 @@
   <script src="assets/js/jquery-3.3.1.min.js"></script>
   <script src="assets/js/popper.min.js"></script>
   <script src="assets/js/bootstrap.min.js"></script>
-  <script src="assets/js/main.js"></script>
+  
 
 </body>
 
