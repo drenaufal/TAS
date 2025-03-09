@@ -24,8 +24,12 @@
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
+   <!-- Customized Bootstrap Stylesheet -->
+   <link href="css/bootstrap.min.css" rel="stylesheet">
+   
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://public.codepenassets.com/css/normalize-5.0.0.min.css">
 
 
 </head>
@@ -68,29 +72,21 @@
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
   
-        <a  href="#" class="cta-btn active">ind</a>
-        <a class="cta-btn" href="#">eng</a>
+        <a  href="#" class="cta-btn active" >ind</a>
+        <a class="cta-btn" href="#" style="margin-left: -17px;">eng</a>
   
       </div>
   </header>
 
   <main class="main">
 
-    <!-- Hero Section -->
-    <section id="hero" class="hero section dark-background">
+   <!-- ***** Main Banner Area Start ***** -->
+   <section class="hero" id="top" data-section="section1">
+    <video autoplay muted loop id="bg-video">
+        <source src="assets/img/banner.mp4" type="video/mp4" />
+    </video>
 
-      <img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-in">
-
-      <div class="container d-flex flex-column align-items-center">
-        <h2 data-aos="fade-up" data-aos-delay="100">PLAN. LAUNCH. GROW.</h2>
-        <p data-aos="fade-up" data-aos-delay="200">We are team of talented designers making websites with Bootstrap</p>
-        <div class="d-flex mt-4" data-aos="fade-up" data-aos-delay="300">
-          <a href="#about" class="btn-get-started">Get Started</a>
-          <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
-        </div>
-      </div>
-
-    </section><!-- /Hero Section -->
+</section>
 
     <!-- About Section -->
     <section id="about" class="about section">
