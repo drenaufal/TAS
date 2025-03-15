@@ -971,18 +971,29 @@ section,
 
 .hero {
   position: relative;
-  max-height: 100%;
+  /* min-width: 100%;
+  min-height: 100vh;
+  max-width: 100%;
+  max-height: 100vh; */
   overflow: hidden;
   margin-bottom: -7px;
-  top: -60px;
+  
   background-color: #192661;
+}
+
+@media (max-width: 768px) {
+  #bg-video {
+    min-height: 70vh;
+    max-height: 100vh;
+    
+  }
 }
 
 #bg-video {
     min-width: 100%;
-    min-height: 100vh;
+    min-height: 100%;
     max-width: 100%;
-    max-height: 100vh;
+    max-height: 100%;
     object-fit: contain;
     z-index: 100;
     opacity: .99;
