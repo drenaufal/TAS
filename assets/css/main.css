@@ -9,6 +9,7 @@
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root { 
   --background-color: #ffffff; /* Background color for the entire website, including individual sections */
+  --background-color-black: #000000; /* Background color for the entire website, including individual sections */
   --default-color: #444444; /* Default color used for the majority of the text content across the entire website */
   --heading-color: #273d4e; /* Color for headings, subheadings and title throughout the website */
   /* --accent-color: #ff4a17; Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
@@ -1095,7 +1096,7 @@ section,
 --------------------------------------------------------------*/
 .about h3 {
   font-weight: 700;
-  font-size: 28px;
+  font-size: 30px;
   margin-bottom: 20px;
 }
 
@@ -1106,6 +1107,16 @@ section,
 .about .content ul {
   list-style: none;
   padding: 0;
+}
+
+.about .content  {
+  margin: 20px 0
+}
+
+.about .content p{
+  margin: 0.5rem;
+  color: #444444;
+  font-size: 1.1rem;
 }
 
 .about .content ul li {
