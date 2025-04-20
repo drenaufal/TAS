@@ -16,6 +16,11 @@
   --accent-color: #004586; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
+
+  --primary-blue: #0d47a1;
+  --light-blue: #42a5f5;
+  --medium-blue: #1976d2;
+  --lightest-blue: #bbdefb;
 }
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
@@ -3201,22 +3206,22 @@ section,
     border-color: #17556f;
   }
   .circle3 {
-    border-color: #f58c31;
+    border-color: #29bdcc;
   }
   .circle4 {
-    border-color: #ed4565;
+    border-color: #17556f;
   }
   .circle5 {
-    border-color: #f0b224;
+    border-color: #29bdcc;
   }
   .circle6 {
-    border-color: #1eb473;
+    border-color: #17556f;
   }
   .circle7 {
-    border-color: #93288d;
+    border-color: #29bdcc;
   }
   .circle8 {
-    border-color: #1b5f8c;
+    border-color: #17556f;
   }
 }
 
@@ -3265,3 +3270,5 @@ section,
 	to{transform:rotate(-270deg);}
 }
  /* end section miletone */
+
+
