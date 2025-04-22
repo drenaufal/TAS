@@ -26,6 +26,11 @@
     .values-section h2{
       color: white;
     }
+
+    .values-section h5{
+        font-size: 1rem;
+        margin: .5rem;
+      }
     
     .value-card {
         background-color: var(--light-blue);
