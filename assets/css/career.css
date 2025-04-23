@@ -77,7 +77,8 @@
     }
     
     .logo {
-        max-width: 150px;
+        max-width: 270px;
+        margin-bottom: -20px;
     }
     
     .company-name {
