@@ -19,9 +19,12 @@
         color: white;
     }
 
-    .values-section .col-lg-3{
+    @media (min-width: 1200px) {
+        .values-section .col-lg-3{
       width: 14%;
-    }
+         } 
+        }
+ 
 
     .values-section h2{
       color: white;
