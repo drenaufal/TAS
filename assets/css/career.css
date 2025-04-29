@@ -57,8 +57,15 @@
         color: white;
     }
     
-    .value-card {
+    .b1{
+        background-color: #008cff;
+    }
+    .b2{
         background-color: var(--light-blue);
+    }
+
+    .value-card {
+        
         color: white;
         /* height: 100px; */
         display: flex;
